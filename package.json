@@ -1,0 +1,60 @@
+{
+  "name": "kusi-doc-godofredoninja",
+  "description": "Kusi Doc theme for ghost by @GodoFredoNinja",
+  "demo": "https://godofredo.ninja",
+  "version": "0.0.1",
+  "engines": {
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
+  },
+  "license": "",
+  "author": {
+    "name": "GodoFredo",
+    "email": "hello@godofredo.ninja",
+    "url": "https://godofredo.ninja"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Magazine",
+      "Blog"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godofredoninja/kusi-doc"
+  },
+  "bugs": {
+    "url": "https://github.com/godofredoninja/kusi-doc/issues",
+    "email": "hello@godofredo.ninja"
+  },
+  "config": {
+    "posts_per_page": 12,
+    "image_sizes": {
+      "xxs": {
+        "width": 30
+      },
+      "xs": {
+        "width": 100
+      },
+      "s": {
+        "width": 300
+      },
+      "m": {
+        "width": 600
+      },
+      "l": {
+        "width": 1000
+      },
+      "xl": {
+        "width": 2000
+      }
+    }
+  }
+}
