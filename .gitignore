@@ -8,6 +8,7 @@ b-cov
 *.gz
 *.zip
 *.swp
+*.html
 
 
 pids
@@ -36,8 +37,4 @@ yarn-error.log
 yarn.lock
 
 # master
-.eslintrc
-.stylelintrc.js
-.gulpfile.js
-*.html
-src/
+# src/

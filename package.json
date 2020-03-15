@@ -7,7 +7,7 @@
     "ghost": ">=3.0.0",
     "ghost-api": "v3"
   },
-  "license": "",
+  "license": "MIT",
   "author": {
     "name": "GodoFredo",
     "email": "hello@godofredo.ninja",
@@ -17,8 +17,7 @@
     "type": "theme",
     "categories": [
       "Minimal",
-      "Magazine",
-      "Blog"
+      "documentation"
     ]
   },
   "keywords": [
