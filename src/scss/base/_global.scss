@@ -1,3 +1,21 @@
+// html {
+//   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+//   line-height: 1.5;
+// }
+
+/*! purgecss start ignore */
 body {
   margin: 0;
+  color: #51626a;
+  font-family: Whitney SSm A, Whitney SSm B, sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #242628;
+  line-height: 1.15;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+}
+
+/*! purgecss end ignore */

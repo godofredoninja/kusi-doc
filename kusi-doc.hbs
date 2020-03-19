@@ -1,0 +1,18 @@
+    {{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+<header class="flex items-center bg-white h-16 z-20 top-0 sticky border-b">
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between px-6 lg:px-16">
+            <a class="kusi-logo" href="{{@site.url}}">
+                {{#if @site.logo}}
+                    <img class="h-8" src="{{@site.logo}}" alt="{{@site.title}}" />
+                {{else}}
+                    <span class="text-5xl">{{@site.title}}</span>
+                {{/if}}
+            </a>
+            <div class="hidden lg:block"></div>
+        </div>
+    </div>
+</header>
