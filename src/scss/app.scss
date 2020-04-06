@@ -1,4 +1,42 @@
-/* base
+/* tailwindcss
 /* ---------------------------------------------------------- */
 
-@import 'base/global'
+/* purgecss start ignore */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* purgecss end ignore */
+
+@import "tailwindcss/utilities";
+@import "tailwindcss/screens";
+
+/* purgecss start ignore */
+
+/* abstracts
+/* ---------------------------------------------------------- */
+@import "abstracts/variables";
+
+/* base
+/* ---------------------------------------------------------- */
+@import 'base/global';
+@import 'base/typography';
+
+/* Layout
+/* ---------------------------------------------------------- */
+@import "layout/header";
+// @import 'layout/sidebar';
+
+/* components
+/* ---------------------------------------------------------- */
+@import 'components/story';
+@import 'components/code';
+@import "components/bookmark";
+@import "components/gallery";
+@import "components/subscribe-form";
+
+/* pages
+/* ---------------------------------------------------------- */
+@import 'pages/post';
+
+/* purgecss end ignore */

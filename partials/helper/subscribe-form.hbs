@@ -1,0 +1,23 @@
+<div class="subscribe-form relative p-6 border bg-white border-t-4 rounded overflow-hidden mt-16">
+    <p class="mb-8">{{{t "<strong>👋 Stay in the loop.</strong> Subscribe to {siteTitle} newsletter!" siteTitle=@site.title}}}</p>
+    <form data-members-form="subscribe">
+        <div class="form-group flex flex-col md:flex-row">
+            <input
+                class="flex-auto md:mr-4 mb-4 md:mb-0"
+                data-members-email
+                placeholder="youremail@example.com"
+                autocomplete="false"
+            />
+            <button class="button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center md:w-32 justify-center" type="submit">
+                <span class="button-text">{{t "Subscribe"}}</span>
+                {{> "icons/icon-loader"}}
+            </button>
+        </div>
+        <div class="message-success mt-4 p-3 rounded bg-green-500 text-white w-full hidden leading-tight">
+            {{t "<strong>Great!</strong> Check your inbox and click the link to confirm your subscription."}}
+        </div>
+        <div class="message-error mt-4 p-3 rounded bg-red-500 text-white w-full hidden leading-tight">
+            {{t "Please enter a valid email address!"}}
+        </div>
+    </form>
+</div>

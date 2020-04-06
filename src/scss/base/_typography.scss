@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  // color: #242628;
+  color: #2d3748;
+  line-height: 1.15;
+  font-weight: 500;
+  outline: none;
+}
+
+h1 {
+  font-size: 1.875rem;
+  margin: .67em 0;
+}
+
+h2 {
+  margin: 1.5em 0 .5em;
+  font-size: 1.75rem;
+}
+
+h3 {
+  margin: 1.5em 0 .5em;
+  font-size: 1.375rem;
+}
+
+h4 {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  line-height: 1.375;
+  font-size: 1.125rem;
+}
+
+h4, h5, h6 {
+  margin: 1.5em 0 .5em;
+  font-weight: 500;
+}
+
+@screen md {
+  h1 {
+    font-size: 2.25rem;
+  }
+}

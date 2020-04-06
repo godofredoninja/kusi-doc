@@ -11,6 +11,14 @@ into the {body} of the default.hbs template --}}
 <div class="section blog-posts kusi-blog">
     <div class="section--inner w-full mx-auto max-w-3xl px-6">
 
+        {{!-- Header --}}
+        {{#post}}
+        <div class="mb-12 container-sm text-center max-w-xl mx-auto">
+            <h1 class="font-semibold mt-0 mb-6 text-gray-800">{{title}}</h1>
+            <p class="opacity-75">{{content}}</p>
+        </div>
+        {{/post}}
+
         {{!-- Post Card - ./partials/post-card.hbs --}}
         {{#foreach posts visibility="all"}}
             {{> "post-card"}}

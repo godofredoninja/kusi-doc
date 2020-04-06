@@ -1,0 +1,71 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- Class for <body> --}}
+{{#contentFor "special_body_class"}}post-kusi-doc bg-gray-100{{/contentFor}}
+
+{{!-- Header ./partials/site-header.hbs --}}
+{{> "site-header"}}
+
+{{#post}}
+
+<div class="post w-full max-w-screen-xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row -mx-6 py-6">
+        {{!-- Navigation Left ./partials/site-nav-secondary.hbs --}}
+        {{#if @site.secondary_navigation}}
+            {{> "site-nav-secondary" isSecondary=""}}
+        {{/if}}
+
+        <div class="w-full md:w-3/4 xl:w-3/5">
+            <div class="bg-white shadow-md mx-4 lg:mx-2">
+                <article class="post-article p-6 lg:px-12 lg:py-10">
+                    {{!-- Header --}}
+                    <header class="post-header markdown">
+                        <h1 class="post-title text-gray-800 md:text-4xl">{{title}}</h1>
+                    </header>
+
+                    {{!-- Content --}}
+                    <section class="markdown js-markdown">
+                        {{content}}
+                    </section>
+
+                    {{!-- Subscribe Form ./partials/helper/subscribe-form --}}
+                    {{#if @labs.members}}
+                        {{> "helper/subscribe-form"}}
+                    {{/if}}
+                </article>
+
+                {{!-- Post Footer --}}
+                <div class="post-footer border-t px-6 border-gray-300">
+                    <div class="grid grid-cols-12">
+                        {{!-- Next Post ./partials/post-next-prev-card.hbs --}}
+                        {{#next_post in="primary_tag"}}
+                            {{> "post-next-prev-card" class="pr-10 pl-0" svgClass="mr-4" storyTitle=(t "Previous Post")}}
+                            {{else}}
+                            <div class="col-span-6"></div>
+                        {{/next_post}}
+
+                        {{!-- Previous Post ./partials/post-next-prev-card.hbs --}}
+                        {{#prev_post in="primary_tag"}}
+                            {{> "post-next-prev-card" class="pl-10 pr-0 justify-end text-right" svgClass="order-2 transform rotate-180 ml-4" storyTitle=(t "Next Post")}}
+                            {{else}}
+                            <div class="col-span-6"></div>
+                        {{/prev_post}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Sidebar - Here are the titles of the content of the post --}}
+        <aside class="hidden xl:flex flex-col xl:w-1/5 text-sm lg:max-h-(screen-32) px-6 sticky top-32 overflow-y-auto">
+            <div class="mb-0 text-gray-500 uppercase tracking-wide font-bold text-sm lg:text-xs">{{t "On this page"}}</div>
+            <div class="js-table-content mt-4"></div>
+        </aside>
+    </div>
+</div>
+
+{{/post}}
+
+{{!-- Footer ./partials/site-footer.hbs --}}
+{{> "site-footer"}}

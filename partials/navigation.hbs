@@ -1,0 +1,30 @@
+{{#if isSecondary}}
+
+<ul class="nav mt-4" role="menu">
+{{#foreach navigation}}
+    <li class="mb-3 lg:mb-1" role="menuitem">
+        <a
+            href="{{url absolute="true"}}"
+            class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium {{#if current}}text-blue-500{{else}}hover:translate-x-2px hover:text-gray-900 text-gray-600{{/if}}">
+            <span class="rounded absolute inset-0 bg-blue-200 {{#if current}}opacity-25{{else}}opacity-0{{/if}}"></span>
+            <span class="relative">{{label}}</span>
+        </a>
+    </li>
+{{/foreach}}
+</ul>
+
+{{else}}
+
+<ul class="lg:flex font-medium" role="menu">
+{{#foreach navigation}}
+    <li class="" role="menuitem">
+        <a
+            href="{{url absolute="true"}}"
+            class="mainMenu-link lg:border-b lg:h-16 flex items-center p-2 border-transparent hover:text-blue-500 {{#if current}}text-blue-500 border-blue-500{{else}}text-gray-600{{/if}}">
+            {{label}}
+        </a>
+    </li>
+{{/foreach}}
+</ul>
+
+{{/if}}

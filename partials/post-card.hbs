@@ -1,0 +1,10 @@
+<article class="post-card mb-8 shadow-sm bg-white rounded border relative overflow-hidden">
+    <a href="{{url}}" aria-label="{{title}}" class="absolute inset-0"></a>
+    <div class="post-card-inner p-6 lg:p-12">
+        <h2 class="mt-0 text-gray-800 font-semibold mb-2 text-2xl leading-8"><a href="{{url}}">{{title}}</a></h2>
+        <p class="leading-relaxed mb-5 text-lg">{{excerpt words="30"}}</p>
+
+        {{!-- Date Time - Authors - Read Time ./partials/helper/time-author-read --}}
+        {{> "helper/time-author-read"}}
+    </div>
+</article>

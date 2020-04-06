@@ -1,0 +1,45 @@
+<header class="header flex items-center bg-white h-16 z-20 top-0 sticky border-b">
+    <div class="w-full max-w-screen-xl mx-auto px-6 flex justify-between items-center">
+        {{!-- Logo --}}
+        <div class="header-logo mr-6 flex-none">
+            <a class="kusi-logo" href="{{@site.url}}">
+                {{#if @site.logo}}
+                    <img class="h-8" src="{{@site.logo}}" alt="{{@site.title}}" />
+                {{else}}
+                    <span class="text-2xl font-semibold text-gray-800">{{@site.title}}</span>
+                {{/if}}
+            </a>
+        </div>
+
+        {{!-- Navigation --}}
+        {{#if @site.navigation}}
+        <nav class="mainMenu w-full js-main-menu hidden flex-auto lg:flex overflow-y-auto lg:overflow-hidden whitespace-no-wrap">{{navigation}}</nav>
+        {{/if}}
+
+        {{!-- Social Media --}}
+        <div class="flex">
+            <div class="flex justify-start items-center text-gray-500 js-social-media">
+                {{#if @site.facebook}}
+                    <a class="hover:text-gray-700 ml-5" href="{{facebook_url @site.facebook}}">
+                        <svg class="fill-current w-5 h-5"><use xlink:href="#icon-facebook"></use></svg>
+                    </a>
+                {{/if}}
+
+                {{#if @site.twitter}}
+                    <a class="hover:text-gray-700 ml-5" href="{{twitter_url @site.twitter}}">
+                        <svg class="fill-current w-5 h-5"><use xlink:href="#icon-twitter"></use></svg>
+                    </a>
+                {{/if}}
+
+                {{!-- hamburger button --}}
+                {{#if @site.navigation}}
+                <button class="menu-burger js-menu-burger lg:hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</header>

@@ -9,6 +9,7 @@ b-cov
 *.zip
 *.swp
 *.html
+*.map
 
 
 pids

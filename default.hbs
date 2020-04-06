@@ -17,14 +17,19 @@
     {{ghost_head}}
 
 </head>
-<body class="{{body_class}}">
+<body class="{{block "special_body_class"}}">
 
-    <div class="kc-wrapper">
+    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+    {{{body}}}
 
-        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
-        {{{body}}}
+    {{!-- Icons ./partials/icons/kusi-icon.hbs --}}
+    {{> "icons/kusi-icon"}}
 
-    </div>
+    {{!-- Variables --}}
+    <script>
+        var prismJs = '{{asset "scripts/prism.js"}}';
+        var prismJsComponents = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/';
+    </script>
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}

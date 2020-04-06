@@ -1,0 +1,24 @@
+/* Story - Post Card
+/* ---------------------------------------------------------- */
+
+.post-card {
+  transition: color .3s, box-shadow .3s, transform .3s, background-color .3s, border-color .3s;
+
+  &:hover {
+    @apply shadow-xl;
+
+    transform: translateY(-3px);
+  }
+}
+
+.post-meta {
+  a {
+    @apply text-blue-500;
+    @apply relative;
+    @apply z-10;
+
+    &:hover {
+      @apply text-blue-700;
+    }
+  }
+}

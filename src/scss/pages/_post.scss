@@ -1,0 +1,115 @@
+/* markdown - post
+/* ---------------------------------------------------------- */
+
+.markdown {
+  // color: #4a5568;
+  color: #51626a;
+  line-height: 1.625;
+
+  & > * {
+    margin-top: 1.5rem;
+  }
+
+  a:not(.kg-bookmark-container):not(.anchor) {
+    color: $primary-color;
+    word-break: break-word;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 #3eb0ef;
+    transition: all .2s ease;
+
+    &:hover {
+      color: #2b6cb0;
+      text-decoration: none;
+      box-shadow: inset 0 -1px 0 #2b6cb0;
+    }
+  }
+
+  // & > :first-child {
+  //   margin-top: 0;
+  // }
+
+  & > p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  & > p:first-child {
+    margin: calc(1.6rem - 1px) 0 0;
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+  }
+}
+
+/* Post Titles
+/* ---------------------------------------------------------- */
+
+// stylelint-disable-next-line
+.markdown {
+  & > h2::before,
+  & > h3::before {
+    display: block;
+    height: 6rem;
+    margin-top: -6rem;
+    visibility: hidden;
+    content: "";
+  }
+
+  & > h1 {
+    margin-bottom: .25rem;
+  }
+
+  & > h2 {
+    margin-top: 3.8rem;
+    margin-bottom: 1rem;
+  }
+
+  & > h3 {
+    margin-top: 3.5rem;
+    margin-bottom: .75rem;
+  }
+
+  & > h4 {
+    margin-bottom: 0;
+  }
+}
+
+/* Title Hover for show link
+/* ---------------------------------------------------------- */
+
+.hover-title:hover .anchor {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* List
+/* ---------------------------------------------------------- */
+
+// stylelint-disable-next-line
+.markdown {
+  li {
+    margin: .8rem 0 0 0;
+    padding-left: .3em;
+    line-height: 1.6em;
+    word-break: break-word;
+  }
+
+  ul, ol {
+    padding-left: 1.3em;
+    padding-right: 1.5em;
+
+    & > li:first-child {
+      margin-top: 0;
+    }
+  }
+
+  ol { list-style: decimal }
+  ul { list-style: disc }
+}
+
+/* Prev and Next Post
+/* ---------------------------------------------------------- */
+
+.prevnext-hover:hover p {
+  box-shadow: inset 0 -1px 0 #a2d5f1;
+  transition: all .2s ease;
+}

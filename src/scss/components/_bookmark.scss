@@ -1,0 +1,94 @@
+// Bookmark card
+// -----------------------------------------------------------------------------
+.kg-bookmark {
+  &-card { position: relative }
+
+  &-container {
+    @apply flex;
+    @apply shadow;
+    @apply border;
+    @apply rounded;
+    @apply flex-row;
+    // @apply flex-col;
+
+    transition: box-shadow .3s;
+
+    &:hover {
+      @apply shadow-lg;
+    }
+  }
+
+  &-content {
+    padding: 20px;
+    // order: 1;
+  }
+
+  &-title {
+    @apply text-gray-800;
+    @apply text-base;
+    @apply leading-snug;
+
+    font-weight: 600;
+  }
+
+  &-description {
+    @apply leading-tight;
+    @apply mt-3;
+    @apply text-sm;
+
+    -webkit-line-clamp: 2;
+    max-height: 4em;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-metadata {
+    @apply flex;
+    @apply items-center;
+    @apply mt-3;
+    @apply text-sm;
+  }
+
+  &-publisher {
+    color: $primary-color;
+  }
+
+  &-thumbnail {
+    // flex-grow: 1;
+    min-height: 150px;
+    min-width: 33%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &-thumbnail img {
+    @apply inset-0;
+    @apply absolute;
+    @apply object-cover;
+    @apply object-center;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  &-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+  }
+
+  &-author::after {
+    content: "•";
+    margin: 0 6px;
+    opacity: .6;
+  }
+}
+
+@media #{$md-and-down} {
+  .kg-bookmark {
+    &-container { flex-direction: column }
+    &-content { order: 1 }
+  }
+}

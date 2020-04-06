@@ -1,0 +1,19 @@
+<div class="post-meta text-sm">
+    {{t "Posted"}}
+    <time class="datetime u-textCapitalize" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+    {{t "by"}}
+
+    {{!-- authors --}}
+    {{#foreach authors}}
+        <img
+            class="rounded-full w-8 h-8 object-cover inline-block {{#unless @first}}-ml-2{{/unless}}"
+            src="{{#if profile_image}}{{img_url profile_image size="xs"}}{{else}}{{asset "img/avatar.png"}}{{/if}}"
+            alt="{{name}}"
+        />
+    {{/foreach}}
+
+    {{#has author="count:>2"}}{{t "Multiple authors"}}{{else}}{{authors}}{{/has}}
+
+    <span class="bull">-</span>
+    <span class="readingTime" style="cursor:default" title="{{reading_time seconds=(t "< 1 min read") minute=(t "1 min read") minutes=(t "% min read")}}">{{reading_time seconds=(t "< 1 min read") minute=(t "1 min read") minutes=(t "% min read")}}</span>
+</div>

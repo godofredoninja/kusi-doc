@@ -1,0 +1,37 @@
+/* Subscribe Form
+/* ---------------------------------------------------------- */
+
+.subscribe-form {
+  border-color: #a2d5f1;
+  border-top-color: $primary-color;
+}
+
+form {
+  // Error
+  &.error,
+  &.invalid {
+    .message-error {
+      display: block;
+    }
+  }
+
+  // success
+  &.success .message-success {
+    display: block;
+  }
+
+  // Animation Loafing
+  &.loading {
+    .button-text { display: none }
+
+    .icon--loader {
+      display: inline-block;
+      animation: spin .8s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

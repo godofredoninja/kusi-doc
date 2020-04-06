@@ -1,3 +1,169 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  color: #51626a;
+  font-family: Whitney SSm A, Whitney SSm B, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  outline: none;
+}
+
+figure {
+  @apply ml-0;
+  @apply mr-0;
+}
+
+figcaption {
+  margin: .5rem 0 0;
+  font-size: .9em;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: .2px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: .25em solid #3eb0ef;
+  font-size: 18px;
+  margin: 2.5rem 0 !important;
+  padding: 0 1.5em;
+  transition: border-color .3s;
+
+  p {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+hr {
+  // border-color: #edf2f7;
+  @apply border-gray-300;
+
+  border-width: 0 0 1px;
+  margin: 4rem 0 !important;
+}
+
+input {
+  @apply transition-colors;
+  @apply duration-100;
+  @apply ease-in-out;
+  @apply border-2;
+  @apply border-transparent;
+  @apply bg-gray-200;
+  @apply py-2 ;
+  @apply rounded;
+  @apply px-4;
+  // @apply pl-10;
+  @apply appearance-none;
+
+  &:focus {
+    @apply outline-none;
+    @apply bg-white;
+    @apply border-gray-300;
+  }
+
+  &:placeholder {
+    @apply text-gray-600;
+  }
+}
+
+button {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// table
+// -----------------------------------------------------------------------------
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 35px 0 0;
+  max-width: 100%;
+  overflow-x: auto;
+  // vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+  -webkit-overflow-scrolling: touch;
+
+  th,
+  td {
+    padding: 6px 13px;
+    border: 1px solid #e2e8f0;
+  }
+
+  tr:nth-child(2n) {
+    background-color: #f6f8fa;
+  }
+
+  th {
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+
+/* Section
+/* ---------------------------------------------------------- */
+
+.section {
+  padding: calc(2% + 1.5rem) 0;
+  position: relative;
+  width: 100%;
+  flex: 1;
+}
+
+/* Video Responsive
+/* ---------------------------------------------------------- */
+
+.video-responsive {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: 0 0 56.25%;
+  position: relative;
+  width: 100%;
+
+  iframe {
+    border: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  video {
+    border: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+/* Medium Zoom
+/* ---------------------------------------------------------- */
+
+.medium-zoom-overlay,
+.medium-zoom-image {
+  z-index: 50;
 }
