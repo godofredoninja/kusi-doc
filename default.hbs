@@ -25,6 +25,9 @@
     {{!-- Icons ./partials/icons/kusi-icon.hbs --}}
     {{> "icons/kusi-icon"}}
 
+    {{!-- notification Subscribe ./partials/notification.hbs --}}
+    {{#if @labs.members}}{{> "notification"}}{{/if}}
+
     {{!-- Variables --}}
     <script>
         var prismJs = '{{asset "scripts/prism.js"}}';

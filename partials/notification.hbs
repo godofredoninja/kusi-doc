@@ -1,0 +1,45 @@
+<div class="notification-subscribe transition transform fixed z-20 top-0 inset-x-0 pt-2 sm:pt-5 invisible">
+    <div class="max-w-screen-xl mx-auto px-2 sm:px-4">
+        <div class="py-2 px-3 rounded-lg bg-gray-900 shadow-lg max-w-screen-xl mx-auto flex items-center justify-between flex-wrap">
+            <div class="flex-1 flex items-center">
+                <span class="text-xl">🎉</span>
+                <span class="ml-3 font-medium text-white truncate">{{t "You've successfully subscribed to"}} {{@site.title}}!</span>
+            </div>
+            <button class="js-notification-close flex p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-gray-800">
+                <svg class="fill-current w-6 h-6 text-white"><use xlink:href="#icon-close"></use></svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+{{#contentFor "scripts"}}
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+
+        function ready() {
+            if (action == 'subscribe') { document.body.classList.add('subscribe-success'); }
+
+            document.querySelector('.js-notification-close').addEventListener('click', function(e) {
+                document.body.classList.remove('subscribe-success');
+                var uri = window.location.toString();
+                if (uri.indexOf("?") > 0) {
+                    var clean_uri = uri.substring(0, uri.indexOf("?"));
+                    window.history.replaceState({}, document.title, clean_uri);
+                }
+            });
+        }
+        window.addEventListener('load', ready, false);
+    </script>
+{{/contentFor}}

@@ -160,6 +160,19 @@ table {
   }
 }
 
+/* notification subscribe
+/* ---------------------------------------------------------- */
+
+.notification-subscribe {
+  transform: translateY(-175%);
+  transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.subscribe-success .notification-subscribe {
+  visibility: visible;
+  transform: translateY(0);
+}
+
 /* Medium Zoom
 /* ---------------------------------------------------------- */
 
