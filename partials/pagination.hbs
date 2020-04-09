@@ -1,9 +1,9 @@
 <nav class="pagination text-center md:flex md:justify-center md:items-center mt-16" role="navigation">
     {{#if prev}}
-        <a class="newer-posts mt-2 mx-2 px-4 py-2 rounded-full border text-gray-700 hover:bg-gray-200 hover:border-gray-500" href="{{page_url prev}}">&larr; Newer Posts</a>
+        <a class="newer-posts mt-2 mx-2 px-4 py-2 rounded-full border text-gray-700 hover:bg-gray-200 hover:border-gray-500" href="{{page_url prev}}">&larr; {{t "Newer Posts"}}</a>
     {{/if}}
-    <span class="page-number mx-3">Page {{page}} of {{pages}}</span>
+    <span class="page-number mx-3">{{t "Page {page} of {pages}" page=page pages=pages}}</span>
     {{#if next}}
-        <a class="older-posts mt-2 mx-2 px-4 py-2 rounded-full border text-gray-700 hover:bg-gray-200 hover:border-gray-500" href="{{page_url next}}">Older Posts &rarr;</a>
+        <a class="older-posts mt-2 mx-2 px-4 py-2 rounded-full border text-gray-700 hover:bg-gray-200 hover:border-gray-500" href="{{page_url next}}">{{t "Older Posts"}} &rarr;</a>
     {{/if}}
 </nav>

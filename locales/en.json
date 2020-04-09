@@ -1,0 +1,19 @@
+{
+  "Getting Started": "Getting Started",
+  "On this page": "On this page",
+  "Subscribe": "Subscribe",
+  "youremail@example.com": "youremail@example.com",
+  "<strong>👋 Stay in the loop.</strong> Subscribe to {siteTitle} newsletter!": "<strong>👋 Stay in the loop.</strong> Subscribe to {siteTitle} newsletter!",
+  "Please enter a valid email address!": "Please enter a valid email address!",
+  "<strong>Great!</strong> Check your inbox and click the link to confirm your subscription": "<strong>Great!</strong> Check your inbox and click the link to confirm your subscription",
+  "Next Post": "Next Post",
+  "Previous Post": "Previous Post",
+  "Posted": "Posted",
+  "by": "by",
+  "< 1 min read": "&lt; 1 min read",
+  "1 min read": "1 min read",
+  "% min read": "% min read",
+  "Newer Posts": "Newer Posts",
+  "Older Posts": "Older Posts",
+  "Page {page} of {pages}": "Page {page} of {pages}"
+}

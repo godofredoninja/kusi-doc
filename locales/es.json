@@ -1,0 +1,19 @@
+{
+  "Getting Started": "Empezando",
+  "On this page": "En esta página",
+  "Subscribe": "Suscríbete",
+  "youremail@example.com": "tucorreo@ejemplo.com",
+  "<strong>👋 Stay in the loop.</strong> Subscribe to {siteTitle} newsletter!": "<strong>👋 Mantente al tanto.</strong> ¡Suscríbete al boletín de {siteTitle}!",
+  "Please enter a valid email address!": "Por favor, introduzca un correo electrónico válido!",
+  "<strong>Great!</strong> Check your inbox and click the link to confirm your subscription": "<strong>¡Genial!</strong> Revisa tu correo y haz click en el enlace para confirmar tu suscripción.",
+  "Next Post": "Siguiente Post",
+  "Previous Post": "Anterior Post",
+  "Posted": "Publicado el",
+  "by": "por",
+  "< 1 min read": "&lt; 1 min de lectura",
+  "1 min read": "1 min de lectura",
+  "% min read": "% min de lectura",
+  "Newer Posts": "Artículos Siguientes",
+  "Older Posts": "Artículos Anteriores",
+  "Page {page} of {pages}": "Página {page} de {pages}"
+}
