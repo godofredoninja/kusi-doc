@@ -1,0 +1,28 @@
+routes:
+  /:
+    data:
+      post: page.kusi-home
+    template: kusi-doc-home
+
+collections:
+  /docs/:
+    permalink: /docs/{slug}/
+    filter: primary_tag:docs
+    # Adding all the content of a specific post
+    data: post.introduction
+    template: custom-kusi-doc
+
+  /blog/:
+    permalink: /blog/{slug}/
+    template: kusi-doc-blog
+    filter: primary_tag:blog
+    # Add data for title and content
+    data:
+      post: page.kusi-doc-blog
+
+  /:
+    permalink: /{slug}/
+    template: index
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
