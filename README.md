@@ -17,7 +17,7 @@ It is available for free so you can use on your site. If you have any suggestion
 
 [![Kusi Doc free theme for ghost](./screenshot.jpg)](https://godofredo.ninja)
 
-[![Kusi Doc](./documentation/doc-blog.jpg)](https://godofredo.ninja)
+[![Kusi Doc](./documentation/doc-blog.jpg)](https://raw.githubusercontent.com/godofredoninja/kusi-doc/master/documentation/doc-blog.jpg)
 
 ## Featured
 
