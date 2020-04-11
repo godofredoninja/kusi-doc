@@ -38,12 +38,12 @@ into the {body} of the default.hbs template --}}
                 {{/if}}
 
                 {{!-- Content --}}
-                <section class="markdown js-markdown">
+                <div class="markdown js-markdown">
                     {{content}}
 
                     {{!-- Tags --}}
                     {{#if tags}}<div class="post-tags mt-6"><span class="text-gray-800">{{t "Tags:"}}</span> {{tags}}</div>{{/if}}
-                </section>
+                </div>
 
 
                 {{!-- Subscribe Form ./partials/helper/subscribe-form --}}
