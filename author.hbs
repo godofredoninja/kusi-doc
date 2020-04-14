@@ -64,7 +64,9 @@ into the {body} of the default.hbs template --}}
 
         {{!-- Post Card - ./partials/post-card.hbs --}}
         {{#foreach posts visibility="all"}}
-            {{> "post-card"}}
+            {{^has tag="docs"}}
+                {{> "post-card"}}
+            {{/has}}
         {{/foreach}}
 
     </div>
