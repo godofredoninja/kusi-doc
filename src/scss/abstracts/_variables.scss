@@ -16,6 +16,6 @@ $md-and-up:     "only screen and (min-width : #{$md})";
 $lg-and-up:     "only screen and (min-width : #{$lg})";
 $xl-and-up:     "only screen and (min-width : #{$xl})";
 
-$sm-and-down:   "only screen and (max-width : #{$sm})";
-$md-and-down:   "only screen and (max-width : #{$md})";
-$lg-and-down:   "only screen and (max-width : #{$lg})";
+$sm-and-down:   "only screen and (max-width : #{$sm - 1})";
+$md-and-down:   "only screen and (max-width : #{$md -1 })";
+$lg-and-down:   "only screen and (max-width : #{$lg - 1})";

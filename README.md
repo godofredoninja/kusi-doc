@@ -23,6 +23,7 @@ It is available for free so you can use on your site. If you have any suggestion
 
 - Support for different [languages](http://themes.ghost.org/docs/i18n#section-how-to-add-any-language) (en - es)
 - Previous and next Post
+- Table of Content for documentation post
 - YouTube, Vimeo, kickstarter, dailymotion => Responsive
 - Code syntax [Prismjs](http://prismjs.com/index.html#languages-list) Supported all syntax
 
@@ -54,6 +55,8 @@ Enable the following checkbox on the Labs page in the Ghost admin panel.
 - First back up your routes in your ghost settings `Labs -> Routes -> Download current routes.yml`
 - Re-download the Route and edit `routes.yml` line `routes`
 
+[![Kusi Doc Home](./documentation/kusi-doc-home.jpg)](https://raw.githubusercontent.com/godofredoninja/kusi-doc/master/documentation/kusi-doc-home.jpg)
+
 ```yaml
 routes:
   # Home Page - kusi Doc
@@ -77,7 +80,7 @@ routes:
 ```html
   <div class="md:flex mt-16">
     <!-- Documentation -->
-    <a href="http://localhost:2368/kusi-docs/" class="flex items-center mt-2 mx-2 px-4 py-2 rounded-lg border text-gray-700 hover:bg-gray-200 hover:border-gray-500">
+    <a href="http://localhost:2368/docs/" class="flex items-center mt-2 mx-2 px-4 py-2 rounded-lg border text-gray-700 hover:bg-gray-200 hover:border-gray-500">
       <svg class="fill-current mr-2 w-4 h-4"><use xlink:href="#icon-doc"></use></svg>
       Documentation
     </a>
@@ -89,7 +92,7 @@ routes:
     </a>
 
     <!-- Blog -->
-    <a href="http://localhost:2368/kusi-blog/" class="flex items-center mt-2 mx-2 px-4 py-2 rounded-lg border text-gray-700 hover:bg-gray-200 hover:border-gray-500">
+    <a href="http://localhost:2368/blog/" class="flex items-center mt-2 mx-2 px-4 py-2 rounded-lg border text-gray-700 hover:bg-gray-200 hover:border-gray-500">
       <svg class="fill-current mr-2 w-4 h-4"><use xlink:href="#icon-rss"></use></svg>
       Blog
     </a>
@@ -99,6 +102,8 @@ routes:
 ## Documentation Page
 
 To create the documentation page is very easy, you have to create an article and choose in template `kusi-doc`. you also have to add the primary tag `docs`.
+
+[![Kusi Doc Post](./documentation/kusi-doc-post.jpg)](https://raw.githubusercontent.com/godofredoninja/kusi-doc/master/documentation/kusi-doc-post.jpg)
 
 :nerd_face: The secondary menu will be used on the documentation page.
 
@@ -142,6 +147,8 @@ collections:
 - Create a new page
 - Choose your favorite title
 - Use the url `kusi-doc-blog` or your favorite url
+
+[![Kusi Doc Blog](./documentation/kusi-doc-blog.jpg)](https://raw.githubusercontent.com/godofredoninja/kusi-doc/master/documentation/kusi-doc-blog.jpg)
 
 ```yaml
 collections:
