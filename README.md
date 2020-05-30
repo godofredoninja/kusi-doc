@@ -166,6 +166,7 @@ collections:
 
 - `en` — English default language
 - `es` — Español
+- `tr` — Turkish by [@tolgaaaltas](https://github.com/tolgaaaltas)
 
 ![kusi doc theme ghost Language](./documentation/language.jpg)
 
