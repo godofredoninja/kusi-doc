@@ -1,0 +1,19 @@
+{
+  "Getting Started": "Başlarken",
+  "On this page": "Bu sayfada",
+  "Subscribe": "Abone Ol",
+  "youremail@example.com": "epostanız@ornek.com",
+  "<strong>👋 Stay in the loop.</strong> Subscribe to {siteTitle} newsletter!": "<strong>👋 Haberdar olarak kal.</strong> {siteTitle} sitesinin bültenine abone ol!",
+  "Please enter a valid email address!": "Lütfen geçerli bir posta adresi giriniz!",
+  "<strong>Great!</strong> Check your inbox and click the link to confirm your subscription": "<strong>Harika!</strong> Gelen kutunuzu kontrol edin ve aboneliği onaylayın",
+  "Next Post": "Sonraki Gönderi",
+  "Previous Post": "Önceki Gönderi",
+  "Posted": "Gönderildi",
+  "by": "tarafından",
+  "< 1 min read": "&lt; 1 dk okunur",
+  "1 min read": "1 dk okunur",
+  "% min read": "% dk okunur",
+  "Newer Posts": "Yeni Gönderiler",
+  "Older Posts": "Eski Gönderiler",
+  "Page {page} of {pages}": "{pages} sayfada {page}"
+}
